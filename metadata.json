@@ -1,0 +1,6 @@
+{
+  "name": "Auraé Beauty Lounge",
+  "description": "A cinematic luxury fashion-beauty experience and interactive design system for Auraé Beauty Lounge, featuring editorial layouts, glassmorphism, and smooth motion design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
