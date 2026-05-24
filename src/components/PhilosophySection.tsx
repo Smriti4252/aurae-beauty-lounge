@@ -74,6 +74,8 @@ export default function PhilosophySection() {
                   src={IMAGES.loungeInterior}
                   alt="Auraé Luxury Lounging Sanctuary Interior"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-[2500ms] group-hover/img:scale-[1.06]"
                 />
               </motion.div>
@@ -99,6 +101,8 @@ export default function PhilosophySection() {
                   src={IMAGES.sculptSilhouette}
                   alt="Cinematic Silhouette Contour Play"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover scale-[1.05] hover:scale-[1.12] transition-transform duration-[1500ms]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" />

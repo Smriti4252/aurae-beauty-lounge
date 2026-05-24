@@ -111,11 +111,11 @@ export const TYPOGRAPHY_TOKENS: TypographyToken[] = [
 ];
 
 export const IMAGES = {
-  heroPortrait: '/src/assets/images/aurae_hero_portrait_1779525253730.png',
-  loungeInterior: '/src/assets/images/aurae_lounge_interior_1779525270459.png',
-  skincareBottle: '/src/assets/images/aurae_ritual_skincare_1779525288620.png',
-  beautyDetail: '/src/assets/images/aurae_beauty_moment_1779525305120.png',
-  sculptSilhouette: '/src/assets/images/aurae_silhouette_contour_1779529339369.png',
+  heroPortrait: '/images/hero/hero-portrait.png',
+  loungeInterior: '/images/philosophy/lounge-interior.png',
+  skincareBottle: '/images/rituals/skincare.png',
+  beautyDetail: '/images/gallery/beauty-moment.png',
+  sculptSilhouette: '/images/gallery/silhouette.png',
 };
 
 export const RITUALS: ServiceRitual[] = [

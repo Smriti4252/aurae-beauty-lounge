@@ -96,6 +96,8 @@ function GalleryCard({ item, index }: { item: GalleryItem; index: number; key?: 
             src={item.image}
             alt={item.title}
             referrerPolicy="no-referrer"
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover select-none filter transition-all duration-[1600ms] ease-[cubic-bezier(0.16,1,0.3,1)]"
             style={{
               filter: isHovered 

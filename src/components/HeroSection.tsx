@@ -108,6 +108,7 @@ export default function HeroSection({
               src={current.image}
               alt="Auraé Immersive Campaign Film Background"
               referrerPolicy="no-referrer"
+              decoding="async"
               className="w-full h-full object-cover object-center scale-[1.03]"
             />
           </motion.div>

@@ -3,8 +3,9 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
+import Lenis from 'lenis';
 import { Sparkles, Instagram, Mail, Calendar, Compass, ShieldCheck } from 'lucide-react';
 import Navigation from './components/Navigation';
 import HeroSection from './components/HeroSection';
@@ -19,6 +20,23 @@ import { AtelierProduct, ServiceRitual } from './types';
 
 export default function App() {
   const [selectedRitualForBooking, setSelectedRitualForBooking] = useState<ServiceRitual | null>(null);
+  
+  useEffect(() => {
+    const lenis = new Lenis({
+      lerp: 0.1,
+      duration: 1.5,
+      smoothWheel: true,
+    });
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => lenis.destroy();
+  }, []);
   
   // Luxury bag checkout counter
   const [cart, setCart] = useState<AtelierProduct[]>([]);
